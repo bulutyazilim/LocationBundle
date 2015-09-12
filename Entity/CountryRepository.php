@@ -1,6 +1,6 @@
 <?php
 
-namespace Ojs\LocationBundle\Entity;
+namespace OkulBilisim\LocationBundle\Entity;
 
 use Doctrine\ORM\EntityRepository;
 

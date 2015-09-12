@@ -1,5 +1,5 @@
 <?php
-namespace Ojs\LocationBundle\Form\EventListener;
+namespace OkulBilisim\LocationBundle\Form\EventListener;
 
 use Symfony\Component\Form\FormEvent;
 use Symfony\Component\Form\FormEvents;
@@ -7,7 +7,7 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\PropertyAccess\PropertyAccess;
 use Doctrine\ORM\EntityRepository;
-use Ojs\LocationBundle\Entity\Province;
+use OkulBilisim\LocationBundle\Entity\Province;
 
 class AddProvinceFieldSubscriber implements EventSubscriberInterface
 {
@@ -21,7 +21,7 @@ class AddProvinceFieldSubscriber implements EventSubscriberInterface
     private function addProvinceForm(FormInterface $form, $country_id)
     {
         $formOptions = array(
-            'class'         => 'Ojs\LocationBundle\Entity\Province',
+            'class'         => 'OkulBilisim\LocationBundle\Entity\Province',
             'empty_value'   => 'City',
             'label'         => 'City',
             'attr'          => array(

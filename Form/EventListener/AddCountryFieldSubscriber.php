@@ -1,7 +1,7 @@
 <?php
 
-namespace Ojs\LocationBundle\Form\EventListener;
-use Ojs\LocationBundle\Entity\Province;
+namespace OkulBilisim\LocationBundle\Form\EventListener;
+use OkulBilisim\LocationBundle\Entity\Province;
 use Symfony\Component\Form\FormEvent;
 use Symfony\Component\Form\FormEvents;
 use Symfony\Component\Form\FormInterface;
@@ -29,12 +29,12 @@ class AddCountryFieldSubscriber implements EventSubscriberInterface
     }
 
     /**
-     * @param \Ojs\LocationBundle\Entity\Country $country
+     * @param \OkulBilisim\LocationBundle\Entity\Country $country
      */
     private function addCountryForm(FormInterface $form, $country = null)
     {
         $formOptions = array(
-            'class'         => 'Ojs\LocationBundle\Entity\Country',
+            'class'         => 'OkulBilisim\LocationBundle\Entity\Country',
             'mapped'        => false,
             'label'         => 'Country',
             'empty_value'   => 'Select Country',

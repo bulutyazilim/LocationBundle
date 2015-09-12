@@ -1,7 +1,7 @@
-Ojs\LocationBundle\Entity\Province:
+OkulBilisim\LocationBundle\Entity\Province:
   type: entity
   table: province
-  repositoryClass: Ojs\LocationBundle\Entity\ProvinceRepository
+  repositoryClass: OkulBilisim\LocationBundle\Entity\ProvinceRepository
   id:
     id:
       type: integer
@@ -15,7 +15,7 @@ Ojs\LocationBundle\Entity\Province:
       length: 255
   manyToOne:
     country:
-      targetEntity: Ojs\LocationBundle\Entity\Country
+      targetEntity: OkulBilisim\LocationBundle\Entity\Country
       inversedBy: provinces
       joinColumn:
         name: country_id

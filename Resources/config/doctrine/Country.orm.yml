@@ -1,7 +1,7 @@
-Ojs\LocationBundle\Entity\Country:
+OkulBilisim\LocationBundle\Entity\Country:
   type: entity
   table: country
-  repositoryClass: Ojs\LocationBundle\Entity\CountryRepository
+  repositoryClass: OkulBilisim\LocationBundle\Entity\CountryRepository
   id:
     id:
       type: integer
@@ -15,6 +15,6 @@ Ojs\LocationBundle\Entity\Country:
       length: 255
   oneToMany:
     provinces:
-      targetEntity: Ojs\LocationBundle\Entity\Province
+      targetEntity: OkulBilisim\LocationBundle\Entity\Province
       mappedBy: country
       fetch: EXTRA_LAZY
