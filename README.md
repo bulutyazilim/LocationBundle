@@ -1,0 +1,2 @@
+# Location Bundle for OJS
+
