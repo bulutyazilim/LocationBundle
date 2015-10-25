@@ -1,6 +1,3 @@
-SET foreign_key_checks = 0;
-TRUNCATE TABLE province;
-TRUNCATE TABLE country;
 INSERT INTO country VALUES ('1', 'Aruba'),
 ('2', 'Afghanistan'), 
 ('3', 'Angola'), 
@@ -1640,5 +1637,3 @@ INSERT INTO province VALUES ('240', '1', 'â€“'),
 ('1649', '239', 'Harare'), 
 ('1650', '239', 'Manicaland'), 
 ('1651', '239', 'Midlands');
-
-SET foreign_key_checks = 1;
