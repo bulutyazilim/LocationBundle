@@ -1,7 +1,7 @@
 SET foreign_key_checks = 0;
-TRUNCATE TABLE `province`;
-TRUNCATE TABLE `country`;
-INSERT INTO `country` VALUES ('1', 'Aruba'), 
+TRUNCATE TABLE province;
+TRUNCATE TABLE country;
+INSERT INTO country VALUES ('1', 'Aruba'),
 ('2', 'Afghanistan'), 
 ('3', 'Angola'), 
 ('4', 'Anguilla'), 
@@ -241,7 +241,7 @@ INSERT INTO `country` VALUES ('1', 'Aruba'),
 ('238', 'Zambia'), 
 ('239', 'Zimbabwe');
 
-INSERT INTO `province` VALUES ('240', '1', 'â€“'), 
+INSERT INTO province VALUES ('240', '1', 'â€“'),
 ('241', '2', 'Balkh'), 
 ('242', '2', 'Herat'), 
 ('243', '2', 'Kabol'), 
@@ -1642,4 +1642,3 @@ INSERT INTO `province` VALUES ('240', '1', 'â€“'),
 ('1651', '239', 'Midlands');
 
 SET foreign_key_checks = 1;
-
