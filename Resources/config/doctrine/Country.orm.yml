@@ -1,7 +1,6 @@
 OkulBilisim\LocationBundle\Entity\Country:
   type: entity
   table: country
-  repositoryClass: OkulBilisim\LocationBundle\Entity\CountryRepository
   id:
     id:
       type: integer

@@ -1,7 +1,6 @@
 OkulBilisim\LocationBundle\Entity\Province:
   type: entity
   table: province
-  repositoryClass: OkulBilisim\LocationBundle\Entity\ProvinceRepository
   id:
     id:
       type: integer
