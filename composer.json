@@ -1,5 +1,5 @@
 {
-  "name": "okulbilisim/location-bundle",
+  "name": "bulutyazilim/location-bundle",
   "description": "A city/country selector bundle",
   "type": "symfony-bundle",
   "keywords": [
