@@ -1,8 +1,8 @@
 <?php
 
-namespace OkulBilisim\LocationBundle\Controller;
+namespace BulutYazilim\LocationBundle\Controller;
 
-use OkulBilisim\LocationBundle\Entity\Country;
+use BulutYazilim\LocationBundle\Entity\Country;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
@@ -13,7 +13,7 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getManager();
 
         /** @var Country $country */
-        $country = $em->getRepository('OkulBilisimLocationBundle:Country')->find($country);
+        $country = $em->getRepository('BulutYazilimLocationBundle:Country')->find($country);
         if (!$country) {
             throw $this->createNotFoundException();
         }

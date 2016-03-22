@@ -1,4 +1,4 @@
-OkulBilisim\LocationBundle\Entity\Province:
+BulutYazilim\LocationBundle\Entity\Province:
   type: entity
   table: province
   id:
@@ -14,7 +14,7 @@ OkulBilisim\LocationBundle\Entity\Province:
       length: 255
   manyToOne:
     country:
-      targetEntity: OkulBilisim\LocationBundle\Entity\Country
+      targetEntity: BulutYazilim\LocationBundle\Entity\Country
       inversedBy: provinces
       joinColumn:
         name: country_id

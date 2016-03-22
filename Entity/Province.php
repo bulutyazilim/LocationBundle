@@ -1,6 +1,6 @@
 <?php
 
-namespace OkulBilisim\LocationBundle\Entity;
+namespace BulutYazilim\LocationBundle\Entity;
 
 class Province
 {
