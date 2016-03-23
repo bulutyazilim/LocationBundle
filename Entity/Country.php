@@ -1,30 +1,23 @@
 <?php
 
-namespace OkulBilisim\LocationBundle\Entity;
+namespace BulutYazilim\LocationBundle\Entity;
 
-use Doctrine\Common\Collections\Collection;
-use JMS\Serializer\Annotation as JMS;
+use Doctrine\Common\Collections\ArrayCollection;
 
-/**
- * $this
- * @JMS\ExclusionPolicy("all")
- */
 class Country
 {
     /**
      * @var integer
-     * @JMS\Expose
      */
     private $id;
 
     /**
      * @var string
-     * @JMS\Expose
      */
     private $name;
 
     /**
-     * @var Collection|Province[]
+     * @var ArrayCollection|Province[]
      */
     private $provinces;
 
@@ -62,7 +55,7 @@ class Country
     }
 
     /**
-     * @return Collection|Province[]
+     * @return ArrayCollection|Province[]
      */
     public function getProvinces()
     {

@@ -1,23 +1,16 @@
 <?php
-namespace OkulBilisim\LocationBundle\Entity;
 
-use JMS\Serializer\Annotation as JMS;
+namespace BulutYazilim\LocationBundle\Entity;
 
-/**
- * $this
- * @JMS\ExclusionPolicy("all")
- */
 class Province
 {
     /**
      * @var integer
-     * @JMS\Expose
      */
     private $id;
 
     /**
      * @var string
-     * @JMS\Expose
      */
     private $name;
 

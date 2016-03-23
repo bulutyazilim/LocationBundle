@@ -1,9 +1,9 @@
 <?php
 
-namespace OkulBilisim\LocationBundle\Controller;
+namespace BulutYazilim\LocationBundle\Controller;
 
-use OkulBilisim\LocationBundle\Entity\Country;
-use OkulBilisim\LocationBundle\Entity\Province;
+use BulutYazilim\LocationBundle\Entity\Country;
+use BulutYazilim\LocationBundle\Entity\Province;
 use Symfony\Bridge\Doctrine\RegistryInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -18,7 +18,7 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getManager();
 
         /** @var Country $country */
-        if ( ! $country = $em->getRepository('OkulBilisimLocationBundle:Country')->find($country)) {
+        if ( ! $country = $em->getRepository('BulutYazilimLocationBundle:Country')->find($country)) {
             throw $this->createNotFoundException();
         }
 
