@@ -16,7 +16,6 @@ class Province
 
     /**
      * @var Country
-     * @JMS\Expose
      */
     private $country;
 
